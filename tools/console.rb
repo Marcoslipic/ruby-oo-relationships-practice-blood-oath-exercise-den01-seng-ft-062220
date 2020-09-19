@@ -1,8 +1,5 @@
-# require 'require_relative'
+require 'require_relative'
 require_relative '../config/environment.rb'
-# require 'pry'
-
-
 
 def reload
   load 'config/environment.rb'
@@ -21,9 +18,9 @@ cult2 = Cult.new "Space Cult", "Luxembourg", 1810, "yes"
 cult3 = Cult.new "SoulCycle", "New York", 2010, "weee"
 cult4 = Cult.new "Eeeeee", "New York", 2011, "cool stuff folks"
 
-ben.join_cult cult1, 8-20-19
-lamar.join_cult cult1, 3-4-17
-lamar.join_cult cult2, 2-1-14
+Bloodoath.new ben, cult1, 8-20-19
+Bloodoath.new lamar, cult1, 3-4-17
+Bloodoath.new lamar, cult2, 2-1-14
 
 
 # This is a convenient place to define variables and/or set up new object instances,

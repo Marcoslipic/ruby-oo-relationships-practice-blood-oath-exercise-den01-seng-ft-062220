@@ -12,6 +12,10 @@ require_rel '../app'
 # lisa = Follower.new "lisa", 10, "Saxophone noises"
 
 
+
+binding.pry
+
+puts "hi"
 # cult1 = Cult.new "Pool", "Houston", 1980, "wet"
 # cult2 = Cult.new "Space Cult", "Luxembourg", 1810, "yes"
 # cult3 = Cult.new "SoulCycle", "New York", 2010, "weee"

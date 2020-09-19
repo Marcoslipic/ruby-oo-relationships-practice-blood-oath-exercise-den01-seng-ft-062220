@@ -29,13 +29,13 @@ Your goal is to build out all of the methods listed in the deliverables. Do your
 
 ## Deliverables
 
-### Domain Modeling
+<!-- ### Domain Modeling
 
 First step is to model the domain you are building out. As a non-discriminatory cult recruitment platform, `Cult`s will have many `Follower`s while `Follower`s will be allowed to join many `Cult`s. How do they keep track of this? `BloodOath`s of course! You cannot join a `Cult` without making a `BloodOath`.
 
 * What are your models?
 * What does your schema look like?
-* What are the relationships between your models?
+* What are the relationships between your models? -->
 
 ---
 
@@ -51,14 +51,14 @@ Questions you should ask yourself:
 
 **`Cult`**
 
-* `Cult#name`
+<!-- * `Cult#name`
   * returns a `String` that is the cult's name
 * `Cult#location`
   * returns a `String` that is the city where the cult is located
 * `Cult#founding_year`
   * returns an `Integer` that is the year the cult was founded
 * `Cult#slogan`
-  * returns a `String` that is this cult's slogan
+  * returns a `String` that is this cult's slogan -->
 * `Cult#recruit_follower`
   * takes in an argument of a `Follower` instance and adds them to this cult's list of followers
 * `Cult#cult_population`
@@ -74,12 +74,12 @@ Questions you should ask yourself:
 
 **`Follower`**
 
-* `Follower#name`
+<!-- * `Follower#name`
   * returns a `String` that is the follower's name
 * `Follower#age`
   * returns an `Integer` that is the age of the follower
 * `Follower#life_motto`
-  * returns a `String` that is the follower's life motto
+  * returns a `String` that is the follower's life motto -->
 * `Follower#cults`
   * returns an `Array` of this follower's cults
 * `Follower#join_cult`
@@ -88,13 +88,13 @@ Questions you should ask yourself:
   * returns an `Array` of all the followers
 * `Follower.of_a_certain_age`
   * takes an `Integer` argument that is an age and returns an `Array` of followers who are the given age or older
-
+<!-- 
 **`BloodOath`**
 
 * `BloodOath#initiation_date`
   * returns a `String` that is the initiation date of this blood oath in the format _YYYY-MM-DD_.
 * `BloodOath.all`
-  * returns an `Array` of all the blood oaths
+  * returns an `Array` of all the blood oaths -->
 
 ---
 
