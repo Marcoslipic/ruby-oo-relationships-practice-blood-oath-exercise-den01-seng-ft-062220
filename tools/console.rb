@@ -18,9 +18,9 @@ cult2 = Cult.new "Space Cult", "Luxembourg", 1810, "yes"
 cult3 = Cult.new "SoulCycle", "New York", 2010, "weee"
 cult4 = Cult.new "Eeeeee", "New York", 2011, "cool stuff folks"
 
-Bloodoath.new ben, cult1, 8-20-19
-Bloodoath.new lamar, cult1, 3-4-17
-Bloodoath.new lamar, cult2, 2-1-14
+oath1 = Bloodoath.new cult1, ben, 2019
+Bloodoath.new cult1, lamar, 2017
+Bloodoath.new cult2, lamar, 2014
 
 
 # This is a convenient place to define variables and/or set up new object instances,

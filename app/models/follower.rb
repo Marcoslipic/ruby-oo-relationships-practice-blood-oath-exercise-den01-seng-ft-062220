@@ -13,5 +13,22 @@ class Follower
     def self.all
         @@all
     end
+
+    def cults
+        followers_oaths = Bloodoath.all.select do |oath|
+            oath.follower == self
+        end
+        followers_oaths.map {|oath| oath.cult}
+    end
+
+    def join_cult cult, date
+        Bloodoath.new(cult, self, date)
+    end
+
+    def self.of_a_certain_age age
+        all.select do |follower|
+            follower.age >= age
+        end
+    end
     
 end
